@@ -1,7 +1,7 @@
 # Portfolio 7: Chatbot
 # Names: Shreya Valaboju, Soham Mukherjee
 
-# Description
+# Description of project
 
 #import libraries
 import os
