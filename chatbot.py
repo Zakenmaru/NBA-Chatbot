@@ -8,7 +8,6 @@ import os
 import nltk
 from nltk.chat.util import Chat, reflections
 import re
-import math
 import pickle
 import numpy as np
 import pandas as pd
