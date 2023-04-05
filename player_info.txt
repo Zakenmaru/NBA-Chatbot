@@ -1,0 +1,177 @@
+{'Christian_Wood': {'2015-2016': 'Delaware 87ers',
+                    '2016-2017': 'Greensboro Swarm',
+                    '2017-2018': 'Delaware 87ers',
+                    '2018-2019': 'Wisconsin Herd',
+                    '2019': 'New Orleans Pelicans',
+                    '2019-2020': 'Detroit Pistons',
+                    '2020-2022': 'Houston Rockets',
+                    '2022-present': 'Dallas Mavericks',
+                    'Born': '(1995-09-27) September 27, 1995 (age 27)Long '
+                            'Beach, California  U.S.',
+                    'College': 'UNLV (2013-2015)',
+                    'High school': 'Los Alamitos(Los Alamitos, '
+                                   'California)~Knight(Palmdale, '
+                                   'California)~Findlay(Henderson, Nevada)',
+                    'League': 'NBA',
+                    'Listed height': '6 ft 9 in (2.06 m)',
+                    'Listed weight': '214 lb (97 kg)',
+                    'NBA draft': '2015 / Undrafted',
+                    'Playing career': '2015-present',
+                    'Position': 'Power forward / Center',
+                    'name': 'Christian Wood'},
+ 'Dwight_Powell': {'2014': 'Maine Red Claws',
+                   '2014-2015': 'Texas Legends',
+                   '2014-present': 'Dallas Mavericks',
+                   'Born': '(1991-07-20) July 20, 1991 (age 31)Toronto, '
+                           'Ontario, Canada',
+                   'College': 'Stanford (2010-2014)',
+                   'High school': 'IMG Academy(Bradenton, Florida)',
+                   'League': 'NBA',
+                   'Listed height': '6 ft 10 in (2.08 m)',
+                   'Listed weight': '240 lb (109 kg)',
+                   "Men's basketball": "Medals~~~~~~~Men's "
+                                       'basketball~~~Representing  '
+                                       'Canada~~~FIBA AmeriCup~~~~2015 Mexico',
+                   'NBA draft': '2014 / Round: 2 / Pick: 45th overall',
+                   'Playing career': '2014-present',
+                   'Position': 'Center / Power forward',
+                   'name': 'Dwight Powell'},
+ 'Frank_Ntilikina': {'2015-2017': 'SIG Strasbourg',
+                     '2017-2021': 'New York Knicks',
+                     '2021-present': 'Dallas Mavericks',
+                     'Born': '(1998-07-28) 28 July 1998 (age 24)Ixelles, '
+                             'Belgium',
+                     'League': 'NBA',
+                     'Listed height': '6 ft 4 in (1.93 m)[1]',
+                     'Listed weight': '200 lb (91 kg)',
+                     "Men's basketball": "Medals~~~~~~~Men's "
+                                         'basketball~~~Representing  '
+                                         'France~~~Summer Olympics~~~~2020 '
+                                         'Tokyo~Team~~~FIBA World Cup~~~~2019 '
+                                         'China~~~~Europe U-18 '
+                                         'Championship~~~~2016 Turkey~U-18 '
+                                         'team~~~Europe U-16 '
+                                         'Championship~~~~2014 Latvia~U-16 '
+                                         'team',
+                     'NBA draft': '2017 / Round: 1 / Pick: 8th overall',
+                     'Nationality': 'French',
+                     'Playing career': '2015-present',
+                     'Position': 'Point guard',
+                     'name': 'Frank Ntilikina'},
+ 'JaVale_McGee': {'2008-2012': 'Washington Wizards',
+                  '2012-2015': 'Denver Nuggets',
+                  '2015': 'Philadelphia 76ers',
+                  '2015-2016': 'Dallas Mavericks',
+                  '2016-2018': 'Golden State Warriors',
+                  '2018-2020': 'Los Angeles Lakers',
+                  '2020-2021': 'Cleveland Cavaliers',
+                  '2021': 'Denver Nuggets',
+                  '2021-2022': 'Phoenix Suns',
+                  '2022-present': 'Dallas Mavericks',
+                  'Born': '(1988-01-19) January 19, 1988 (age 35)Flint, '
+                          'Michigan, U.S.',
+                  'College': 'Nevada (2006-2008)',
+                  'High school': 'Detroit Country Day(Beverly Hills, '
+                                 'Michigan)~Providence Christian(Fremont, '
+                                 'Michigan)~Hales Franciscan(Chicago, '
+                                 'Illinois)',
+                  'League': 'NBA',
+                  'Listed height': '7 ft 0 in (2.13 m)',
+                  'Listed weight': '270 lb (122 kg)',
+                  "Men's basketball": "Medals~~~~~~~Men's "
+                                      'basketball~~~Representing the  United '
+                                      'States~~~Olympic Games~~~~2020 '
+                                      'Tokyo~Team',
+                  'NBA draft': '2008 / Round: 1 / Pick: 18th overall',
+                  'Playing career': '2008-present',
+                  'Position': 'Center',
+                  'name': 'JaVale McGee'},
+ 'Kyrie_Irving': {'2011-2017': 'Cleveland Cavaliers',
+                  '2017-2019': 'Boston Celtics',
+                  '2019-2023': 'Brooklyn Nets',
+                  '2023-present': 'Dallas Mavericks',
+                  'Born': '(1992-03-23) March 23, 1992 (age 30)Melbourne, '
+                          'Victoria, Australia',
+                  'College': 'Duke (2010-2011)',
+                  'High school': 'Montclair Kimberley Academy(Montclair, New '
+                                 'Jersey)~St. Patrick(Elizabeth, New Jersey)',
+                  'League': 'NBA',
+                  'Listed height': '6 ft 2 in (1.88 m)',
+                  'Listed weight': '195 lb (88 kg)',
+                  "Men's basketball": "Medals~~~~~~~Men's "
+                                      'basketball~~~Representing the  United '
+                                      'States~~~Olympics~~~~2016 Rio de '
+                                      'Janeiro~Team~~~World Cup~~~~2014 '
+                                      'Spain~Team~~~FIBA Americas U18 '
+                                      'Championship~~~~ 2010 San Antonio ~Team',
+                  'NBA draft': '2011 / Round: 1 / Pick: 1st overall',
+                  'Nationality': 'American',
+                  'Playing career': '2011-present',
+                  'Position': 'Point guard / Shooting guard',
+                  'name': 'Kyrie Irving'},
+ 'Luka_Doncic': {'2015-2018': 'Real Madrid',
+                 '2018-present': 'Dallas Mavericks',
+                 'Born': '(1999-02-28) February 28, 1999 (age 24)Ljubljana, '
+                         'Slovenia',
+                 'League': 'NBA',
+                 'Listed height': '6 ft 7 in (2.01 m)',
+                 'Listed weight': '230 lb (104 kg)',
+                 "Men's basketball": "Medals~~~~~~~Men's "
+                                     'basketball~~~Representing  '
+                                     'Slovenia~~~EuroBasket~~~~2017 Turkey',
+                 'NBA draft': '2018 / Round: 1 / Pick: 3rd overall',
+                 'Playing career': '2015-present',
+                 'Position': 'Point guard / Shooting guard',
+                 'name': 'Luka Doncic'},
+ 'Maxi_Kleber': {'2011-2014': 'Wurzburg',
+                 '2014-2015': 'Obradoiro',
+                 '2015-2017': 'Bayern Munich',
+                 '2017-present': 'Dallas Mavericks',
+                 'Born': '(1992-01-29) 29 January 1992 (age 31)Wurzburg, '
+                         'Germany',
+                 'League': 'NBA',
+                 'Listed height': '6 ft 10 in (2.08 m)',
+                 'Listed weight': '240 lb (109 kg)',
+                 'NBA draft': '2014 / Undrafted',
+                 'Playing career': '2011-present',
+                 'Position': 'Power forward',
+                 'name': 'Maxi Kleber'},
+ 'Reggie_Bullock': {'2013-2015': 'Los Angeles Clippers',
+                    '2015': 'Grand Rapids Drive',
+                    '2015-2019': 'Detroit Pistons',
+                    '2019': 'Los Angeles Lakers',
+                    '2019-2021': 'New York Knicks',
+                    '2021-present': 'Dallas Mavericks',
+                    'Born': '(1991-03-16) March 16, 1991 (age 32)Baltimore, '
+                            'Maryland, U.S.',
+                    'College': 'North Carolina (2010-2013)',
+                    'High school': 'Kinston(Kinston, North Carolina)',
+                    'League': 'NBA',
+                    'Listed height': '6 ft 6 in (1.98 m)',
+                    'Listed weight': '205 lb (93 kg)',
+                    'NBA draft': '2013 / Round: 1 / Pick: 25th overall',
+                    'Playing career': '2013-present',
+                    'Position': 'Small forward / Shooting guard',
+                    'name': 'Reggie Bullock'},
+ 'Theo_Pinson': {'2018-2020': 'Long Island Nets',
+                 '2020-2021': 'New York Knicks',
+                 '2021': 'Maine Celtics',
+                 '2021-present': 'Dallas Mavericks',
+                 '2022': 'Texas Legends',
+                 'Born': '(1995-11-05) November 5, 1995 (age 27)Greensboro, '
+                         'North Carolina, U.S.',
+                 'College': 'North Carolina (2014-2018)',
+                 'High school': 'Wesleyan Christian Academy(High Point, North '
+                                'Carolina)',
+                 'League': 'NBA',
+                 'Listed height': '6 ft 7 in (2.01 m)',
+                 'Listed weight': '212 lb (96 kg)',
+                 'NBA draft': '2018 / Undrafted',
+                 'Playing career': '2018-present',
+                 'Position': 'Shooting guard / Small forward',
+                 'Representing the United States': 'Medals~~~~~~~Representing '
+                                                   'the  United States~~~FIBA '
+                                                   'Americas U16 '
+                                                   'Championship~~~~2011 '
+                                                   'Mexico~Team',
+                 'name': 'Theo Pinson'}}
