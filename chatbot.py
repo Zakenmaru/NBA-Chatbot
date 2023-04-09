@@ -54,8 +54,11 @@ def train(words):
     topic = topic_keywords[most_similar_topic_idx]
 
     # find the player and the related topic.
-    print("Here's some information about", player_name)
-    pprint(players_info[player_name][topic])
+    if topic in players_info[player_name]:
+        print("Here's some information about", player_name)
+        pprint(players_info[player_name][topic])
+    else:
+        print("Could not find information about " + player_name + " and their " + topic + "; it may not exist. Try again?")
 
 
 
