@@ -84,8 +84,8 @@ def chat():
 
     while True:
         user_input = input(user_name+": ")
-        if user_input.lower() == 'quit':
-            break;
+        if 'quit' in user_input.lower():
+            break
         else:
             print("Champ: Ok, let me get you that information...")
             preprocess(user_input)  # preprocess user questions
