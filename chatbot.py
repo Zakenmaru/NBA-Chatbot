@@ -58,7 +58,8 @@ def train(words):
         print("Here's some information about", player_name)
         pprint(players_info[player_name][topic])
     else:
-        print("Could not find information about " + player_name + " and their " + topic + "; it may not exist. Try again?")
+        print("Could not find information about " + player_name + " and their " + topic + "; it may not exist. Try "
+                                                                                          "again?")
 
 
 
