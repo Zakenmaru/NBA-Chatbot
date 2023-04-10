@@ -1,10 +1,16 @@
 # Portfolio 7: Chatbot
 # Names: Shreya Valaboju, Soham Mukherjee
-import json
 
-# Description of project
+
+# To -Do's:
+#   - handle greetings, anything that's not about a specific player
+#   - 'born' = 'from', synonyms,etc.
+#   - when a player's first name is just referenced - so like "luka" not "luka doncic"
+#   - improvements on user model
+
 
 # import libraries
+import json
 import nltk
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -27,12 +33,35 @@ def printKnowledgeBase(fp_name):
 
 # use cosine similarity and tf-idf vectorization to match a player to what the user input is or who the user is asking about
 def train(words):
+
+    player_names = list(players_info.keys())
+    new_player_names = []
+    greetings= ["hello","hey","morning","evening","afternoon","howdy","greetings"]
+
+    # check if the user is talking about any of the players we have info on
+    for n in player_names:
+        n = n.split("_")
+        new_player_names.append(n[0].lower())
+        new_player_names.append(n[1].lower())
+
+    intersection_players = len([i for i in new_player_names if i in words])
+
+
+    if intersection_players == 0:  # no players in user query, check if it's just a greeting, player related, general mavs related
+        for greeting in greetings:
+            if greeting in words:
+                print("Champ: Howdy!")
+                break
+
+        print("Champ: I am happy to help, you can ask me something about a specific player on the team.")
+        return
+
+
+
     # DEFAULT topic is "Born"
-    topic_keywords = ["Born", "College", "NBA draft", "High school", "Listed weight", "Listed height", "Position",
-                      "Playing career"]
+    topic_keywords = ["Born", "College", "NBA draft", "High school", "Listed weight", "Listed height", "Position", "Playing career","Men's basketball","Nationality"]
     topic_string = ' '.join(topic_keywords)
     similarity_scores_names = []
-    player_names = list(players_info.keys())
     user_query = ' '.join(words)
 
     # Q: Where was Luka Born? --> Where Luka Born
@@ -52,15 +81,21 @@ def train(words):
         similarity_scores.append(cosine_similarity(vectorizer[0], vectorizer[1])[0][0])
 
     most_similar_topic_idx = similarity_scores.index(max(similarity_scores))
+
+    if all(sim_score == 0 for sim_score in similarity_scores):
+        print("Champ: Could not find that specific information about " + player_name)
+        return
+        # general information about the player
+
     topic = topic_keywords[most_similar_topic_idx]
 
     # find the player and the related topic.
     if topic in players_info[player_name]:
-        print("Here's some information about", player_name)
+        print("Champ: Here's some information about", player_name, "relating to", topic)
         pprint(players_info[player_name][topic])
     else:
-        print("Could not find information about " + player_name + " and their " + topic + "; it may not exist. Try "
-                                                                                          "again?")
+        print("Champ: Could not find information about " + player_name + " and their " + topic + "; it may not exist. Try "
+"again?")
 
 
 # lemmatize, remove stop words, numbers, lowercase
@@ -92,12 +127,13 @@ def update_user(users):
 
 
 def chat():
+
     users = load_users()
 
     print("Hello! My name is Champ, you can ask me any anything about the current players on the Dallas Mavs!")
     print(
         "You can type in a player's name to get information OR ask something specific about a player currenty on the team.")
-    print("Type 'quit' to end to stop chatting.")
+    print("Type 'quit' to end session and to stop chatting.")
     user_name = input("Enter your name: ")
 
     if user_name in users:
@@ -119,16 +155,21 @@ def chat():
         if 'quit' in user_input.lower():
             break
         else:
-            print("Champ: Ok, let me get you that information...")
             preprocess(user_input)  # preprocess user questions
 
             # Update user model based on user's response
-            print(f"{user_name}, is there anything else you'd like me to know about you?")
+            print(f"Champ: {user_name}, is there anything else you'd like me to know about you?")
             new_info = input("Likes or dislikes, specifically? ")
+
             if 'like' in new_info.lower().split():
-                user_info["likes"].append(new_info.split('like ')[-1])
+                str=new_info.split('like ')[-1]
+                if str not in user_info["likes"]:
+                    user_info["likes"].append(new_info.split('like ')[-1])
             elif 'dislike' in new_info.lower().split():
-                user_info["dislikes"].append(new_info.split('dislike ')[-1])
+                str = new_info.split('dislike ')[-1]
+                if str not in user_info["dislikes"]:
+                    user_info["dislikes"].append(new_info.split('dislike ')[-1])
+
     update_user(users)
     print("Thanks for chatting,", user_name, "! I hope I answered all your questions, and always - Go Mavs! :)")
 
