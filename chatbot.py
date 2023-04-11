@@ -83,7 +83,7 @@ def train(words):
     most_similar_topic_idx = similarity_scores.index(max(similarity_scores))
 
     if all(sim_score == 0 for sim_score in similarity_scores):
-        print("Champ: Could not find that specific information about " + player_name)
+        print("Champ: Could not find that specific information about " + player_name.replace("_", " "))
         return
         # general information about the player
 
@@ -137,12 +137,11 @@ def chat():
     user_name = input("Enter your name: ")
 
     if user_name in users:
+        print(f"Welcome back, {user_name}!")
         user_info = users[user_name]
     else:
         user_info = {"name": user_name, "personal_info": {}, "likes": [], "dislikes": []}
         users[user_name] = user_info
-
-    print("Champ: Howdy", user_name, "! Go ahead, ask me question")
 
     # Get personalized remarks from the user model
     if user_info["likes"]:
@@ -150,25 +149,28 @@ def chat():
     if user_info["dislikes"]:
         print(f"Champ: Also, I remember you said you don't like {', '.join(user_info['dislikes'])}.")
 
+    # Update user model based on user's response
+    print(f"Champ: {user_name}, is there anything else you'd like me to know about you?")
+    new_info = input("Likes or dislikes, specifically? ")
+
+    likes = re.findall(r'(?i)\blike\b\s+((?:(?!\bdislike\b).)+)', new_info)
+    dislikes = re.findall(r'(?i)\bdislike\b\s+((?:(?!\blike\b).)+)', new_info)
+
+    for like in likes:
+        if like not in user_info["likes"]:
+            user_info["likes"].append(like.strip())
+
+    for dislike in dislikes:
+        if dislike not in user_info["dislikes"]:
+            user_info["dislikes"].append(dislike.strip())
+
+    print("Champ: Howdy", user_name, "! Go ahead, ask me question")
     while True:
         user_input = input(user_name + ": ")
         if 'quit' in user_input.lower():
             break
         else:
             preprocess(user_input)  # preprocess user questions
-
-            # Update user model based on user's response
-            print(f"Champ: {user_name}, is there anything else you'd like me to know about you?")
-            new_info = input("Likes or dislikes, specifically? ")
-
-            if 'like' in new_info.lower().split():
-                str=new_info.split('like ')[-1]
-                if str not in user_info["likes"]:
-                    user_info["likes"].append(new_info.split('like ')[-1])
-            elif 'dislike' in new_info.lower().split():
-                str = new_info.split('dislike ')[-1]
-                if str not in user_info["dislikes"]:
-                    user_info["dislikes"].append(new_info.split('dislike ')[-1])
 
     update_user(users)
     print("Thanks for chatting,", user_name, "! I hope I answered all your questions, and always - Go Mavs! :)")
