@@ -12,7 +12,7 @@
         },
         {
             "tag": "thanks",
-            "patterns": ["thank you", "thanks", "thank much"],
+            "patterns": ["thank", "thanks", "thank much"],
             "responses": ["No problem!", "My pleasure!", "Always at your service."]
         },
         {
@@ -28,7 +28,7 @@
         {
             "tag": "funny",
             "patterns": ["devin booker", "pheonix suns", "booker", "suns", "luka magic"],
-            "responses": ["Luka Doncic, proud owner of the Pheonix Suns, est. Game 7, Round 2 of the 2021-2022 NBA Playoffs", "Devin Booker is Luka's son, born on May 15, 2022."]
+            "responses": ["Luka Doncic's son & proud owner of the Pheonix Suns, est. Game 7, Round 2 of the 2021-2022 NBA Playoffs", "Devin Booker is Luka's son, born on May 15, 2022."]
         }
     ]
 }

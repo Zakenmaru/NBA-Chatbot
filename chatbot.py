@@ -4,8 +4,6 @@
 
 # To -Do's (ADD MORE HERE):
 #   - improvements on user model (add age, other info), also check for user name case, like "Shreya" should be 'shreya'
-#   - I was thinking about adding emotion/sentiment analysis (we'll see if we have time)
-#   -
 
 
 # import libraries
@@ -20,6 +18,7 @@ from nltk.corpus import stopwords
 nltk.download('punkt', quiet=True)
 import re
 from pprint import pprint
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 
 players_info = {}   # knowledge base with player info
@@ -32,7 +31,6 @@ def printKnowledgeBase(fp_name):
     players_info = pickle.load(players_pickle)
     # pprint(players_info)
     return players_info
-
 
 
 # gets all the synonyms for a specfic topic
@@ -49,6 +47,40 @@ def getTopicSynonyms(topics_list):
 
     return syn_dict
 
+def checkIntents(user_query):
+
+    intent_not_about_player=False
+
+    if user_query in intents_dict['greet']['patterns']: # check if the user is just greeting
+        print("Champ: " + random.choice(intents_dict['greet']['responses']))
+        intent_not_about_player=True
+    elif user_query in intents_dict['thanks']['patterns']:  # check if the user is thanking the bot
+        print("Champ: " + random.choice(intents_dict['thanks']['responses']))
+        intent_not_about_player=True
+    elif user_query in intents_dict['goodbye']['patterns']:  # check if the user is saying bye to the bot
+        print("Champ: " + random.choice(intents_dict['goodbye']['responses']))
+        intent_not_about_player=True
+    elif user_query in intents_dict['funny'][
+        'patterns']:  # check if the user is asking about the pheonix suns (our rival)
+        print("Champ: " + random.choice(intents_dict['funny']['responses']))
+        intent_not_about_player=True
+    elif user_query in intents_dict['goat'][
+        'patterns']:  # check if the user is asking who is the best player, who is the GOAT
+        print("Champ: " + random.choice(intents_dict['goat']['responses']))
+        intent_not_about_player=True
+    elif user_query in intents_dict['mark_cuban']['patterns']:  # check if the user is asking about mark cuban
+        print("Champ: " + random.choice(intents_dict['mark_cuban']['responses']))
+        intent_not_about_player=True
+
+    return intent_not_about_player
+
+def getGeneralPlayerInfo(player_name):
+    name = player_name.replace("_"," ")
+    print("\t"+ name + " is a player on the 2022-2023 Dallas Mavericks team. "
+          "\n\t He has been playing basketball since "+players_info[player_name]['Playing career']+
+          "\n\t He plays "+players_info[player_name]['Position'])
+
+
 # use cosine similarity and tf-idf vectorization to match a player to what the user input is or who the user is asking about
 def train(words):
 
@@ -60,38 +92,12 @@ def train(words):
     similarity_scores_names = []
     user_query = ' '.join(words)
 
-    # check if the user is just greeting
-    if user_query in intents_dict['greet']['patterns']:
-        print("Champ: "+ random.choice(intents_dict['greet']['responses']))
+    if checkIntents(user_query) == True:    #check if the user is talking about a player or not
         return
 
-    # check if the user is thanking the bot
-    elif user_query in intents_dict['thanks']['patterns']:
-        print("Champ: " + random.choice(intents_dict['thanks']['responses']))
-        return
-
-    # check if the user is saying bye to the bot
-    elif user_query in intents_dict['goodbye']['patterns']:
-        print("Champ: " + random.choice(intents_dict['goodbye']['responses']))
-        return
-
-    # check if the user is asking about the pheonix suns (our rival)
-    elif user_query in intents_dict['funny']['patterns']:
-        print("Champ: " + random.choice(intents_dict['funny']['responses']))
-        return
-
-    # check if the user is asking who is the best player, who is the GOAT
-    if user_query in intents_dict['goat']['patterns']:
-        print("Champ: " + random.choice(intents_dict['goat']['responses']))
-        return
-
-    # check if the user is asking about mark cuban
-    if user_query in intents_dict['mark_cuban']['patterns']:
-        print("Champ: " + random.choice(intents_dict['mark_cuban']['responses']))
-        return
 
     # check if the user is talking about any of the players we have info on
-    new_player_names = [] # holds names in a more readbale way, like "Luka_Doncic" -> "Luka Doncic"
+    new_player_names = [] # holds names in a more readable way, like "Luka_Doncic" -> "Luka Doncic"
     for n in player_names:
         n = n.split("_")
         if n[0].lower() == 'tim jr.':   #special case for player, Tim Hardaway jr.
@@ -101,10 +107,13 @@ def train(words):
 
     intersection_players = len([i for i in new_player_names if i in words]) # check if the user mentions any of the players we have info on
 
-    if intersection_players == 0:  # no players in user query, can't understand default
-        print("Champ: I'm happy to help, try asking me something about a player.")
+    if intersection_players == 0:  # no players in user query, can't understand -> output default
+        scores= SentimentIntensityAnalyzer().polarity_scores(user_query)
+        if scores['neg'] > 0:   #if the sentiment is overly negative, apologize to the user
+            print("Champ: Sorry you feel this way. Try asking me something about a player (general/specific). I will try my best to help you.")
+        else:
+            print("Champ: I'm happy to help you, but try asking me something about a player.")
         return
-
 
     # find the closest player name to what the user is asking about, using cosine similarity and tf-idf vectorizer
     for name in player_names:
@@ -136,9 +145,11 @@ def train(words):
                     topic_synonym_exists = True
                     topic = t
                     break
-
         if topic_synonym_exists == False:
-            print("Champ: Could not find that specific information about " + player_name)
+            print("Champ: Could not find that specific information about " + player_name.replace("_"," "))
+            print("Champ: Here are some facts about " + player_name.replace("_"," ")+ ": ")
+            #pprint(players_info[player_name])
+            getGeneralPlayerInfo(player_name)
             return
 
     if topic_synonym_exists == False: # no synonym, topic said verbatim by the user
@@ -172,42 +183,8 @@ def preprocess(text_in):
     train(word_tokens_l)
 
 
-def load_users():
-    # load existing user data from file, or initialize new file if it doesn't exist
-    try:
-        with open("users.json", "r") as f:
-            users = json.load(f)
-    except FileNotFoundError:
-        users = {}
-    return users
-
-
-def update_user(users):
-    with open("users.json", "w") as f:
-        json.dump(users, f)
-
-# the intents file handles basic things like greetings, goodbye, random questions about mark cuban, etc.
-def load_intents(intents_file):
-    with open(intents_file, 'r') as f:
-        intents_file = json.load(f)
-
-    for i in intents_file['intents']:
-        intents_dict[i['tag']] = {
-            'patterns': i['patterns'],
-            'responses': i['responses']
-        }
-
-def chat():
-
-    users = load_users()
-
-    print("Hello! My name is Champ, you can ask me any anything about the current players on the Dallas Mavs!")
-    print(
-        "You can type in a player's name to get information OR ask something specific about a player currenty on the team.")
-    print("I have information about a player's college, high school, height, weight, playing career, draft, and more!")
-    print("Type 'quit' to end session and to stop chatting.")
-    user_name = input("\nEnter your name: ")
-
+# asks user about likes/dislikes and updates the user model
+def getUserModel(users, user_name):
     if user_name in users:
         print(f"Welcome back, {user_name}!")
         user_info = users[user_name]
@@ -236,7 +213,46 @@ def chat():
         if dislike not in user_info["dislikes"]:
             user_info["dislikes"].append(dislike.strip())
 
-    print("Champ: Howdy", user_name, "! Go ahead, ask me question")
+
+
+def loadUsers():
+    # load existing user data from file, or initialize new file if it doesn't exist
+    try:
+        with open("users.json", "r") as f:
+            users = json.load(f)
+    except FileNotFoundError:
+        users = {}
+    return users
+
+
+def updateUser(users):
+    with open("users.json", "w") as f:
+        json.dump(users, f)
+
+# the intents file handles basic things like greetings, goodbye, random questions about mark cuban, etc.
+def loadIntents(intents_file):
+    with open(intents_file, 'r') as f:
+        intents_file = json.load(f)
+
+    for i in intents_file['intents']:
+        intents_dict[i['tag']] = {
+            'patterns': i['patterns'],
+            'responses': i['responses']
+        }
+
+def chat():
+
+    users = loadUsers()
+
+    print("Hello! My name is Champ, you can ask me any anything about the current players on the Dallas Mavs!")
+    print("Ask me anything or something specific about a player from the 2022/2023 roster! ")
+    print("I have information about a player's college, high school, height, weight, playing career, draft, and more!")
+    print("Type 'quit' to end session and to stop chatting.")
+    user_name = input("\nEnter your name: ")
+
+    getUserModel(users, user_name)  # retrieve and update user model
+
+    print("Champ: Howdy "+ user_name+ "! Go ahead, ask me question")
     while True:
         user_input = input(user_name + ": ")
         if 'quit' in user_input.lower():
@@ -244,11 +260,11 @@ def chat():
         else:
             preprocess(user_input)  # preprocess user questions
 
-    update_user(users)
+    updateUser(users)
     print("Champ: Thanks for chatting, "+ user_name + "! I hope I answered all your questions, and always - Go Mavs! :)")
 
 
 if __name__ == '__main__':
     players_info = printKnowledgeBase("players.p")
-    load_intents('intents.json')
+    loadIntents('intents.json')
     chat()
