@@ -60,12 +60,10 @@ def checkIntents(user_query):
     elif user_query in intents_dict['goodbye']['patterns']:  # check if the user is saying bye to the bot
         print("Champ: " + random.choice(intents_dict['goodbye']['responses']))
         intent_not_about_player=True
-    elif user_query in intents_dict['funny'][
-        'patterns']:  # check if the user is asking about the pheonix suns (our rival)
+    elif user_query in intents_dict['funny']['patterns']:  # check if the user is asking about the pheonix suns (our rival)
         print("Champ: " + random.choice(intents_dict['funny']['responses']))
         intent_not_about_player=True
-    elif user_query in intents_dict['goat'][
-        'patterns']:  # check if the user is asking who is the best player, who is the GOAT
+    elif user_query in intents_dict['goat']['patterns']:  # check if the user is asking who is the best player, who is the GOAT
         print("Champ: " + random.choice(intents_dict['goat']['responses']))
         intent_not_about_player=True
     elif user_query in intents_dict['mark_cuban']['patterns']:  # check if the user is asking about mark cuban
@@ -244,8 +242,16 @@ def chat():
 
     users = loadUsers()
 
-    print("Hello! My name is Champ, you can ask me any anything about the current players on the Dallas Mavs!")
-    print("Ask me anything or something specific about a player from the 2022/2023 roster! ")
+    # print intro message and how to use chatbot
+    print("Champ: Howdy! My name is Champ, and I'm a bot who knows all about the players on the Dallas Mavericks!")
+    print("Ask me anything or something specific about a player from the ")
+    print("2022/2023 Roster:")
+    print("\t\n"+ "0. Justin Holiday"+"\t\n"+ "1. Theo Pinson""\t\n"+ "2. Kyrie Irving""\t\n"+ "3. Jaden Hardy""\t\n"+ "7. Dwight Powell"+
+          "\t\n"+ "8. Josh Green"+ "\t\n"+ "11. Tim Hardaway Jr."+ "\t\n"+ "13. Markieff Morris"+ "\t\n"+ "21. Frank Ntilikina"+
+          "\t\n"+ "25. Reggie Bullock"+ "\t\n"+ "35. Christian Wood"+ "\t\n"+ "42. Maxi Kleber"+ "\t\n"+ "44. Davis Bertans" +
+          "\t\n"+ "77. Luka Doncic"+ "\t\n"+ "00. Javale McGee"+"\n")
+    print("You can ask me things like: "
+          "\t\n 'What is Kyrie Irving's height?' \t\n 'tell me about Luka Doncic's NBA draft' \t\n 'Where did Javale go to college?'\n")
     print("I have information about a player's college, high school, height, weight, playing career, draft, and more!")
     print("Type 'quit' to end session and to stop chatting.")
     user_name = input("\nEnter your name: ")
