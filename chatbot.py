@@ -242,7 +242,7 @@ def getUserModel(users, user_name):
 def loadUsers():
     # load existing user data from file, or initialize new file if it doesn't exist
     try:
-        with open("users.json", "r") as f:
+        with open("data/users.json", "r") as f:
             users = json.load(f)
     except FileNotFoundError:
         users = {}
@@ -250,7 +250,7 @@ def loadUsers():
 
 
 def updateUser(users):
-    with open("users.json", "w") as f:
+    with open("data/users.json", "w") as f:
         json.dump(users, f)
 
 
@@ -302,5 +302,5 @@ def chat():
 
 if __name__ == '__main__':
     players_info = printKnowledgeBase("players.p")
-    loadIntents('intents.json')
+    loadIntents('data/intents.json')
     chat()

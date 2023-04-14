@@ -1,0 +1,335 @@
+{
+  "Luka_Doncic": {
+    "name": "Luka Doncic",
+    "Position": "Point guard / Shooting guard",
+    "League": "NBA",
+    "Born": "(1999-02-28) February 28, 1999 (age 24)Ljubljana, Slovenia",
+    "height": "6 ft 7 in (2.01 m)",
+    "weight": "230 lb (104 kg)",
+    "NBA draft": "2018 / Round: 1 / Pick: 3rd overall",
+    "Playing career": "2015-present",
+    "Past Teams": [
+      {
+        "2015-2018": "Real Madrid",
+        "2018-present": "Dallas Mavericks"
+      }
+    ],
+    "Men's basketball": "Medals~~~~~~~Men's basketball~~~Representing  Slovenia~~~EuroBasket~~~~2017 Turkey"
+  },
+  "Kyrie_Irving": {
+    "name": "Kyrie Irving",
+    "Position": "Point guard / Shooting guard",
+    "League": "NBA",
+    "Born": "(1992-03-23) March 23, 1992 (age 31)Melbourne, Victoria, Australia",
+    "Nationality": "American",
+    "height": "6 ft 2 in (1.88 m)",
+    "weight": "195 lb (88 kg)",
+    "High school": "Montclair Kimberley Academy(Montclair, New Jersey)~St. Patrick(Elizabeth, New Jersey)",
+    "College": "Duke (2010-2011)",
+    "NBA draft": "2011 / Round: 1 / Pick: 1st overall",
+    "Playing career": "2011-present",
+    "Past Teams": [
+      {
+        "2011-2017": "Cleveland Cavaliers",
+        "2017-2019": "Boston Celtics",
+        "2019-2023": "Brooklyn Nets",
+        "2023-present": "Dallas Mavericks"
+      }
+    ],
+    "Men's basketball": "Medals~~~~~~~Men's basketball~~~Representing the  United States~~~Olympics~~~~2016 Rio de Janeiro~Team~~~World Cup~~~~2014 Spain~Team~~~FIBA Americas U18 Championship~~~~ 2010 San Antonio ~Team"
+  },
+  "Christian_Wood": {
+    "name": "Christian Wood",
+    "Position": "Power forward / Center",
+    "League": "NBA",
+    "Born": "(1995-09-27) September 27, 1995 (age 27)Long Beach, California  U.S.",
+    "height": "6 ft 9 in (2.06 m)",
+    "weight": "214 lb (97 kg)",
+    "High school": "Los Alamitos(Los Alamitos, California)~Knight(Palmdale, California)~Findlay(Henderson, Nevada)",
+    "College": "UNLV (2013-2015)",
+    "NBA draft": "2015 / Undrafted",
+    "Playing career": "2015-present",
+    "Past Teams": [
+      {
+        "2015-2016": "Delaware 87ers",
+        "2016-2017": "Greensboro Swarm",
+        "2017-2018": "Delaware 87ers",
+        "2018-2019": "Wisconsin Herd",
+        "2019": "New Orleans Pelicans",
+        "2019-2020": "Detroit Pistons",
+        "2020-2022": "Houston Rockets",
+        "2022-present": "Dallas Mavericks"
+      }
+    ]
+  },
+  "Davis_Bertans": {
+    "name": "Davis Bertans",
+    "Position": "Power forward",
+    "League": "NBA",
+    "Born": "(1992-11-12) 12 November 1992 (age 30)Valmiera, Latvia",
+    "height": "6 ft 10 in (2.08 m)",
+    "weight": "225 lb (102 kg)",
+    "NBA draft": "2011 / Round: 2 / Pick: 42nd overall",
+    "Playing career": "2007-present",
+    "Past Teams": [
+      {
+        "2007-2008": "ASK Kadeti",
+        "2008-2010": "BAA Riga",
+        "2009": "Keizarmezs",
+        "2010": "Barons",
+        "2010-2012": "Olimpija Ljubljana",
+        "2012-2014": "Partizan",
+        "2014-2016": "Saski Baskonia",
+        "2016-2019": "San Antonio Spurs",
+        "2016-2017": "Austin Spurs",
+        "2019-2022": "Washington Wizards",
+        "2022-present": "Dallas Mavericks"
+      }
+    ],
+    "Men's basketball": "Medals~~~~~~~Men's basketball~~~Representing  Latvia~~~European U-18 Championship~~~~2010 Lithuania~U-18 Team"
+  },
+  "Dwight_Powell": {
+    "name": "Dwight Powell",
+    "Position": "Center / Power forward",
+    "League": "NBA",
+    "Born": "(1991-07-20) July 20, 1991 (age 31)Toronto, Ontario, Canada",
+    "height": "6 ft 10 in (2.08 m)",
+    "weight": "240 lb (109 kg)",
+    "High school": "IMG Academy(Bradenton, Florida)",
+    "College": "Stanford (2010-2014)",
+    "NBA draft": "2014 / Round: 2 / Pick: 45th overall",
+    "Playing career": "2014-present",
+    "Past Teams": [
+      {
+        "2014": "Maine Red Claws",
+        "2014-present": "Dallas Mavericks",
+        "2014-2015": "Texas Legends"
+      }
+    ],
+    "Men's basketball": "Medals~~~~~~~Men's basketball~~~Representing  Canada~~~FIBA AmeriCup~~~~2015 Mexico"
+  },
+  "Reggie_Bullock": {
+    "name": "Reggie Bullock",
+    "Position": "Small forward / Shooting guard",
+    "League": "NBA",
+    "Born": "(1991-03-16) March 16, 1991 (age 32)Baltimore, Maryland, U.S.",
+    "height": "6 ft 6 in (1.98 m)",
+    "weight": "205 lb (93 kg)",
+    "High school": "Kinston(Kinston, North Carolina)",
+    "College": "North Carolina (2010-2013)",
+    "NBA draft": "2013 / Round: 1 / Pick: 25th overall",
+    "Playing career": "2013-present",
+    "Past Teams": [
+      {
+        "2013-2015": "Los Angeles Clippers",
+        "2015": "Grand Rapids Drive",
+        "2015-2019": "Detroit Pistons",
+        "2019": "Los Angeles Lakers",
+        "2019-2021": "New York Knicks",
+        "2021-present": "Dallas Mavericks"
+      }
+    ]
+  },
+  "Maxi_Kleber": {
+    "name": "Maxi Kleber",
+    "Position": "Power forward",
+    "League": "NBA",
+    "Born": "(1992-01-29) 29 January 1992 (age 31)Wurzburg, Germany",
+    "height": "6 ft 10 in (2.08 m)",
+    "weight": "240 lb (109 kg)",
+    "NBA draft": "2014 / Undrafted",
+    "Playing career": "2011-present",
+    "Past Teams": [
+      {
+        "2011-2014": "Wurzburg",
+        "2014-2015": "Obradoiro",
+        "2015-2017": "Bayern Munich",
+        "2017-present": "Dallas Mavericks"
+      }
+    ]
+  },
+  "Frank_Ntilikina": {
+    "name": "Frank Ntilikina",
+    "Position": "Point guard",
+    "League": "NBA",
+    "Born": "(1998-07-28) 28 July 1998 (age 24)Ixelles, Belgium",
+    "Nationality": "French",
+    "height": "6 ft 4 in (1.93 m)[1]",
+    "weight": "200 lb (91 kg)",
+    "NBA draft": "2017 / Round: 1 / Pick: 8th overall",
+    "Playing career": "2015-present",
+    "Past Teams": [
+      {
+        "2015-2017": "SIG Strasbourg",
+        "2017-2021": "New York Knicks",
+        "2021-present": "Dallas Mavericks"
+      }
+    ],
+    "Men's basketball": "Medals~~~~~~~Men's basketball~~~Representing  France~~~Summer Olympics~~~~2020 Tokyo~Team~~~FIBA World Cup~~~~2019 China~~~~Europe U-18 Championship~~~~2016 Turkey~U-18 team~~~Europe U-16 Championship~~~~2014 Latvia~U-16 team"
+  },
+  "JaVale_McGee": {
+    "name": "JaVale McGee",
+    "Position": "Center",
+    "League": "NBA",
+    "Born": "(1988-01-19) January 19, 1988 (age 35)Flint, Michigan, U.S.",
+    "height": "7 ft 0 in (2.13 m)",
+    "weight": "270 lb (122 kg)",
+    "High school": "Detroit Country Day(Beverly Hills, Michigan)~Providence Christian(Fremont, Michigan)~Hales Franciscan(Chicago, Illinois)",
+    "College": "Nevada (2006-2008)",
+    "NBA draft": "2008 / Round: 1 / Pick: 18th overall",
+    "Playing career": "2008-present",
+    "Past Teams": [
+      {
+        "2008-2012": "Washington Wizards",
+        "2012-2015": "Denver Nuggets",
+        "2015": "Philadelphia 76ers",
+        "2015-2016": "Dallas Mavericks",
+        "2016-2018": "Golden State Warriors",
+        "2018-2020": "Los Angeles Lakers",
+        "2020-2021": "Cleveland Cavaliers",
+        "2021": "Denver Nuggets",
+        "2021-2022": "Phoenix Suns",
+        "2022-present": "Dallas Mavericks"
+      }
+    ],
+    "Men's basketball": "Medals~~~~~~~Men's basketball~~~Representing the  United States~~~Olympic Games~~~~2020 Tokyo~Team"
+  },
+  "Theo_Pinson": {
+    "name": "Theo Pinson",
+    "Position": "Shooting guard / Small forward",
+    "League": "NBA",
+    "Born": "(1995-11-05) November 5, 1995 (age 27)Greensboro, North Carolina, U.S.",
+    "height": "6 ft 7 in (2.01 m)",
+    "weight": "212 lb (96 kg)",
+    "High school": "Wesleyan Christian Academy(High Point, North Carolina)",
+    "College": "North Carolina (2014-2018)",
+    "NBA draft": "2018 / Undrafted",
+    "Playing career": "2018-present",
+    "Past Teams": [
+      {
+        "2018-2020": "Long Island Nets",
+        "2020-2021": "New York Knicks",
+        "2021": "Maine Celtics",
+        "2021-present": "Dallas Mavericks",
+        "2022": "Texas Legends"
+      }
+    ],
+    "Representing the United States": "Medals~~~~~~~Representing the  United States~~~FIBA Americas U16 Championship~~~~2011 Mexico~Team"
+  },
+  "Jaden_Hardy": {
+    "name": "Jaden Hardy",
+    "Position": "Shooting guard",
+    "League": "NBA",
+    "Born": "(2002-07-05) July 5, 2002 (age 20)Detroit, Michigan, U.S.",
+    "height": "6 ft 3 in (1.91 m)",
+    "weight": "198 lb (90 kg)",
+    "High school": "Coronado(Henderson, Nevada)",
+    "NBA draft": "2022 / Round: 2 / Pick: 37th overall",
+    "Playing career": "2021-present",
+    "Number": "1, 3",
+    "Past Teams": [
+      {
+        "2021-2022": "NBA G League Ignite",
+        "2022-present": "Dallas Mavericks",
+        "2022": "Texas Legends"
+      }
+    ]
+  },
+  "Justin_Holiday": {
+    "name": "Justin Holiday",
+    "Position": "Shooting guard / Small forward",
+    "League": "NBA",
+    "Born": "(1989-04-05) April 5, 1989 (age 34)Mission Hills, California",
+    "Nationality": "American",
+    "height": "6 ft 6 in (1.98 m)",
+    "weight": "180 lb (82 kg)",
+    "High school": "Campbell Hall(Los Angeles, California)",
+    "College": "Washington (2007-2011)",
+    "NBA draft": "2011 / Undrafted",
+    "Playing career": "2011-present",
+    "Past Teams": [
+      {
+        "2011-2012": "Okapi Aalstar",
+        "2012-2013": "Idaho Stampede",
+        "2013": "Philadelphia 76ers",
+        "2013-2014": "Szolnoki Olaj",
+        "2014-2015": "Golden State Warriors",
+        "2014": "Santa Cruz Warriors",
+        "2015-2016": "Atlanta Hawks",
+        "2016": "Chicago Bulls",
+        "2016-2017": "New York Knicks",
+        "2017-2019": "Chicago Bulls",
+        "2019": "Memphis Grizzlies",
+        "2019-2022": "Indiana Pacers",
+        "2022": "Sacramento Kings",
+        "2022-2023": "Atlanta Hawks",
+        "2023-present": "Dallas Mavericks"
+      }
+    ]
+  },
+  "Markieff_Morris": {
+    "name": "Markieff Morris",
+    "Position": "Power forward",
+    "League": "NBA",
+    "Born": "(1989-09-02) September 2, 1989 (age 33)Philadelphia, Pennsylvania, U.S.",
+    "height": "6 ft 9 in (2.06 m)",
+    "weight": "245 lb (111 kg)",
+    "High school": "Prep Charter(Philadelphia, Pennsylvania)~APEX Academy(Pennsauken, New Jersey)",
+    "College": "Kansas (2008-2011)",
+    "NBA draft": "2011 / Round: 1 / Pick: 13th overall",
+    "Playing career": "2011-present",
+    "Past Teams": [
+      {
+        "2011-2016": "Phoenix Suns",
+        "2016-2019": "Washington Wizards",
+        "2019": "Oklahoma City Thunder",
+        "2019-2020": "Detroit Pistons",
+        "2020-2021": "Los Angeles Lakers",
+        "2021-2022": "Miami Heat",
+        "2022-2023": "Brooklyn Nets",
+        "2023-present": "Dallas Mavericks"
+      }
+    ]
+  },
+  "Tim Jr._Hardaway": {
+    "name": "Tim Hardaway Jr.",
+    "Position": "Shooting guard / Small forward",
+    "League": "NBA",
+    "Born": "(1992-03-16) March 16, 1992 (age 31)Alameda, California, U.S.",
+    "height": "6 ft 5 in (1.96 m)",
+    "weight": "205 lb (93 kg)",
+    "High school": "Miami Palmetto (Pinecrest, Florida)",
+    "College": "Michigan (2010-2013)",
+    "NBA draft": "2013 / Round: 1 / Pick: 24th overall",
+    "Playing career": "2013-present",
+    "Past Teams": [
+      {
+        "2013-2015": "New York Knicks",
+        "2015-2017": "Atlanta Hawks",
+        "2015": "Canton Charge",
+        "2015-2016": "Austin Spurs",
+        "2017-2019": "New York Knicks",
+        "2019-present": "Dallas Mavericks"
+      }
+    ]
+  },
+  "Josh_Green": {
+    "name": "Josh Green (basketball)",
+    "Position": "Shooting guard",
+    "League": "NBA",
+    "Born": "(2000-11-16) 16 November 2000 (age 22)Sydney, New South Wales, Australia",
+    "height": "6 ft 6 in (1.98 m)",
+    "weight": "200 lb (91 kg)",
+    "High school": "The King's School(Sydney, New South Wales)~Mountain Ridge(Glendale, Arizona)~Hillcrest Prep(Phoenix, Arizona)~IMG Academy(Bradenton, Florida)",
+    "College": "Arizona (2019-2020)",
+    "NBA draft": "2020 / Round: 1 / Pick: 18th overall",
+    "Playing career": "2020-present",
+    "Past Teams": [
+      {
+        "2020-present": "Dallas Mavericks",
+        "2021": "Texas Legends"
+      }
+    ],
+    "Men's basketball": "Medals~~~~~~~Men's basketball~~~Representing  Australia~~~Olympic Games~~~~2020 Tokyo~Team"
+  }
+}
