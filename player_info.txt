@@ -13,8 +13,8 @@
                                    'California)~Knight(Palmdale, '
                                    'California)~Findlay(Henderson, Nevada)',
                     'League': 'NBA',
-                    'Listed height': '6 ft 9 in (2.06 m)',
-                    'Listed weight': '214 lb (97 kg)',
+                    'height': '6 ft 9 in (2.06 m)',
+                    'weight': '214 lb (97 kg)',
                     'NBA draft': '2015 / Undrafted',
                     'Playing career': '2015-present',
                     'Position': 'Power forward / Center',
@@ -33,8 +33,8 @@
                    'Born': '(1992-11-12) 12 November 1992 (age 30)Valmiera, '
                            'Latvia',
                    'League': 'NBA',
-                   'Listed height': '6 ft 10 in (2.08 m)',
-                   'Listed weight': '225 lb (102 kg)',
+                   'height': '6 ft 10 in (2.08 m)',
+                   'weight': '225 lb (102 kg)',
                    "Men's basketball": "Medals~~~~~~~Men's "
                                        'basketball~~~Representing  '
                                        'Latvia~~~European U-18 '
@@ -52,8 +52,8 @@
                    'College': 'Stanford (2010-2014)',
                    'High school': 'IMG Academy(Bradenton, Florida)',
                    'League': 'NBA',
-                   'Listed height': '6 ft 10 in (2.08 m)',
-                   'Listed weight': '240 lb (109 kg)',
+                   'height': '6 ft 10 in (2.08 m)',
+                   'weight': '240 lb (109 kg)',
                    "Men's basketball": "Medals~~~~~~~Men's "
                                        'basketball~~~Representing  '
                                        'Canada~~~FIBA AmeriCup~~~~2015 Mexico',
@@ -67,8 +67,8 @@
                      'Born': '(1998-07-28) 28 July 1998 (age 24)Ixelles, '
                              'Belgium',
                      'League': 'NBA',
-                     'Listed height': '6 ft 4 in (1.93 m)[1]',
-                     'Listed weight': '200 lb (91 kg)',
+                     'height': '6 ft 4 in (1.93 m)[1]',
+                     'weight': '200 lb (91 kg)',
                      "Men's basketball": "Medals~~~~~~~Men's "
                                          'basketball~~~Representing  '
                                          'France~~~Summer Olympics~~~~2020 '
@@ -101,8 +101,8 @@
                                  'Michigan)~Hales Franciscan(Chicago, '
                                  'Illinois)',
                   'League': 'NBA',
-                  'Listed height': '7 ft 0 in (2.13 m)',
-                  'Listed weight': '270 lb (122 kg)',
+                  'height': '7 ft 0 in (2.13 m)',
+                  'weight': '270 lb (122 kg)',
                   "Men's basketball": "Medals~~~~~~~Men's "
                                       'basketball~~~Representing the  United '
                                       'States~~~Olympic Games~~~~2020 '
@@ -118,8 +118,8 @@
                          'U.S.',
                  'High school': 'Coronado(Henderson, Nevada)',
                  'League': 'NBA',
-                 'Listed height': '6 ft 3 in (1.91 m)',
-                 'Listed weight': '198 lb (90 kg)',
+                 'height': '6 ft 3 in (1.91 m)',
+                 'weight': '198 lb (90 kg)',
                  'NBA draft': '2022 / Round: 2 / Pick: 37th overall',
                  'Number': '1, 3',
                  'Playing career': '2021-present',
@@ -135,8 +135,8 @@
                                'Arizona)~Hillcrest Prep(Phoenix, Arizona)~IMG '
                                'Academy(Bradenton, Florida)',
                 'League': 'NBA',
-                'Listed height': '6 ft 6 in (1.98 m)',
-                'Listed weight': '200 lb (91 kg)',
+                'height': '6 ft 6 in (1.98 m)',
+                'weight': '200 lb (91 kg)',
                 "Men's basketball": "Medals~~~~~~~Men's "
                                     'basketball~~~Representing  '
                                     'Australia~~~Olympic Games~~~~2020 '
@@ -165,8 +165,8 @@
                     'College': 'Washington (2007-2011)',
                     'High school': 'Campbell Hall(Los Angeles, California)',
                     'League': 'NBA',
-                    'Listed height': '6 ft 6 in (1.98 m)',
-                    'Listed weight': '180 lb (82 kg)',
+                    'height': '6 ft 6 in (1.98 m)',
+                    'weight': '180 lb (82 kg)',
                     'NBA draft': '2011 / Undrafted',
                     'Nationality': 'American',
                     'Playing career': '2011-present',
@@ -182,8 +182,8 @@
                   'High school': 'Montclair Kimberley Academy(Montclair, New '
                                  'Jersey)~St. Patrick(Elizabeth, New Jersey)',
                   'League': 'NBA',
-                  'Listed height': '6 ft 2 in (1.88 m)',
-                  'Listed weight': '195 lb (88 kg)',
+                  'height': '6 ft 2 in (1.88 m)',
+                  'weight': '195 lb (88 kg)',
                   "Men's basketball": "Medals~~~~~~~Men's "
                                       'basketball~~~Representing the  United '
                                       'States~~~Olympics~~~~2016 Rio de '
@@ -200,8 +200,8 @@
                  'Born': '(1999-02-28) February 28, 1999 (age 24)Ljubljana, '
                          'Slovenia',
                  'League': 'NBA',
-                 'Listed height': '6 ft 7 in (2.01 m)',
-                 'Listed weight': '230 lb (104 kg)',
+                 'height': '6 ft 7 in (2.01 m)',
+                 'weight': '230 lb (104 kg)',
                  "Men's basketball": "Medals~~~~~~~Men's "
                                      'basketball~~~Representing  '
                                      'Slovenia~~~EuroBasket~~~~2017 Turkey',
@@ -224,8 +224,8 @@
                                     'Pennsylvania)~APEX Academy(Pennsauken, '
                                     'New Jersey)',
                      'League': 'NBA',
-                     'Listed height': '6 ft 9 in (2.06 m)',
-                     'Listed weight': '245 lb (111 kg)',
+                     'height': '6 ft 9 in (2.06 m)',
+                     'weight': '245 lb (111 kg)',
                      'NBA draft': '2011 / Round: 1 / Pick: 13th overall',
                      'Playing career': '2011-present',
                      'Position': 'Power forward',
@@ -237,8 +237,8 @@
                  'Born': '(1992-01-29) 29 January 1992 (age 31)Wurzburg, '
                          'Germany',
                  'League': 'NBA',
-                 'Listed height': '6 ft 10 in (2.08 m)',
-                 'Listed weight': '240 lb (109 kg)',
+                 'height': '6 ft 10 in (2.08 m)',
+                 'weight': '240 lb (109 kg)',
                  'NBA draft': '2014 / Undrafted',
                  'Playing career': '2011-present',
                  'Position': 'Power forward',
@@ -254,8 +254,8 @@
                     'College': 'North Carolina (2010-2013)',
                     'High school': 'Kinston(Kinston, North Carolina)',
                     'League': 'NBA',
-                    'Listed height': '6 ft 6 in (1.98 m)',
-                    'Listed weight': '205 lb (93 kg)',
+                    'height': '6 ft 6 in (1.98 m)',
+                    'weight': '205 lb (93 kg)',
                     'NBA draft': '2013 / Round: 1 / Pick: 25th overall',
                     'Playing career': '2013-present',
                     'Position': 'Small forward / Shooting guard',
@@ -271,8 +271,8 @@
                  'High school': 'Wesleyan Christian Academy(High Point, North '
                                 'Carolina)',
                  'League': 'NBA',
-                 'Listed height': '6 ft 7 in (2.01 m)',
-                 'Listed weight': '212 lb (96 kg)',
+                 'height': '6 ft 7 in (2.01 m)',
+                 'weight': '212 lb (96 kg)',
                  'NBA draft': '2018 / Undrafted',
                  'Playing career': '2018-present',
                  'Position': 'Shooting guard / Small forward',
@@ -293,8 +293,8 @@
                       'College': 'Michigan (2010-2013)',
                       'High school': 'Miami Palmetto (Pinecrest, Florida)',
                       'League': 'NBA',
-                      'Listed height': '6 ft 5 in (1.96 m)',
-                      'Listed weight': '205 lb (93 kg)',
+                      'height': '6 ft 5 in (1.96 m)',
+                      'weight': '205 lb (93 kg)',
                       'NBA draft': '2013 / Round: 1 / Pick: 24th overall',
                       'Playing career': '2013-present',
                       'Position': 'Shooting guard / Small forward',

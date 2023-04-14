@@ -28,7 +28,7 @@ intents_dict = {}  # basic intents not about players specifically
 # print and store the players knowledge base
 def printKnowledgeBase(fp_name):
     players_pickle = open(fp_name, "rb")
-    players_info = pickle.load(players_pickle, encoding="utf-8")
+    players_info = pickle.load(players_pickle)
     # pprint(players_info)
     return players_info
 
@@ -87,8 +87,8 @@ def getGeneralPlayerInfo(player_name):
 def train(words):
     player_names = list(players_info.keys())  # list of player names
 
-    topic_keywords = ["Born", "College", "NBA draft", "High school", "Listed weight", "Listed height", "Position",
-                      "Playing career", "Men's basketball", "Nationality", "League", "Teams"]  # topics that we have knowledge on
+    topic_keywords = ["Born", "College", "NBA draft", "High school", "weight", "height", "Position",
+                      "Playing career", "Men's basketball", "Nationality", "League", "Past Teams"]  # topics that we have knowledge on
     topic_dict = getTopicSynonyms(
         topic_keywords)  # topics can be mentioned in a different way, like "born" is also "birth"
     similarity_scores_names = []
@@ -162,7 +162,19 @@ def train(words):
     # find the player and the related topic and print info found in players dictionary
     if topic in players_info[player_name]:
         print("Champ: Here's some information about", player_name.replace("_", " "), "relating to", topic)
-        pprint(players_info[player_name][topic])
+        if topic != "Past Teams":
+            pprint(players_info[player_name][topic])
+        else:
+            # raw_teams = players_info[player_name][topic][2:-2]
+            past_teams_list = []
+            for team in players_info[player_name][topic]:
+                past_teams_list.append(set(team.items()))
+
+            # Sort in proper order
+            teams_list = sorted(list(past_teams_list[0]), key=lambda x: x[0])
+
+            for idx, team in enumerate(teams_list, 1):
+                print(f"{idx}. {team[0]}: {team[1]}")
     else:
         print("Champ: Could not find information about " + player_name.replace("_",
                                                                                " ") + " and their " + topic + "; it may not exist. Try again?")
