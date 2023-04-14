@@ -207,17 +207,25 @@ def getUserModel(users, user_name):
     print(f"Champ: {user_name}, is there anything else you'd like me to know about you?")
     new_info = input("Likes or dislikes, specifically? ")
 
-    likes = re.findall(r'(?i)\blike\b\s+((?:(?!\bdislike\b).)+)', new_info)
-    dislikes = re.findall(r'(?i)\bdislike\b\s+((?:(?!\blike\b).)+)', new_info)
+    likes = []
+    dislikes = []
 
-    for like in likes:
-        if like not in user_info["likes"]:
-            user_info["likes"].append(like.strip())
+    analyzer = SentimentIntensityAnalyzer()
+    phrases = re.split(r'[^\w\s]', new_info)  # split on all punctuation
+    for phrase in phrases:
+        sentiment = analyzer.polarity_scores(phrase)
 
-    for dislike in dislikes:
-        if dislike not in user_info["dislikes"]:
-            user_info["dislikes"].append(dislike.strip())
+        for i, word in enumerate(phrase.lower().split()):
+            if sentiment['compound'] > 0 and word in ["love", "like", "enjoy"]:
+                likes.append(phrase.split()[i + 1])
+            elif sentiment['compound'] < 0 and word in ["hate", "dislike", "don't like"]:
+                dislikes.append(phrase.split()[i + 1])
 
+    if likes:
+        user_info["likes"].extend(likes)
+
+    if dislikes:
+        user_info["dislikes"].extend(dislikes)
 
 def loadUsers():
     # load existing user data from file, or initialize new file if it doesn't exist
