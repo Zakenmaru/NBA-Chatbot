@@ -311,6 +311,6 @@ def chat():
 
 
 if __name__ == '__main__':
-    players_info = printKnowledgeBase("players.p")
+    players_info = printKnowledgeBase("data/players.p")
     loadIntents('data/intents.json')
     chat()
