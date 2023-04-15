@@ -20,10 +20,15 @@
             "patterns": ["owner team", "owner dallas mavericks", "owns mavs", "mark cuban", "owns team"],
             "responses": ["Mark Cuban, owner of the Dallas Mavs", "Mark Cuban is our owner since Jan. 4th,2000!", "Mark Cuban - bought the team for $285 million"]
         },
-      {
+        {
             "tag": "goat",
             "patterns": ["goat", "best player team", "best player mavs", "best player time"],
             "responses": ["Dirk Nowitzki", "All time GOAT, #41 - Dirk Nowitzki", "Our very own Hall of Famer - Dirk Nowitzki!!"]
+        },
+        {
+            "tag": "general_mavs",
+            "patterns": ["mavs", "mavericks", "dallas mavericks", "dallas mavs", "nba"],
+            "responses": ["Dallas Mavericks is an NBA (National Basketball Association) team located in Dallas, Texas.", "The Dallas Mavericks is a basketball team part of the NBA (National Basketball Association)"]
         },
         {
             "tag": "funny",

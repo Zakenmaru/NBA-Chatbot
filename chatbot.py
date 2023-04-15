@@ -1,9 +1,13 @@
 # Portfolio 7: Chatbot
-# Names: Shreya Valaboju, Soham Mukherjee
+# Names: Shreya Valaboju (sxv180047), Soham Mukherjee (sxm180113)
+# CS4395.001
 
 
-# To -Do's (ADD MORE HERE):
-#   - improvements on user model (add age, other info), also check for user name case, like "Shreya" should be 'shreya'
+# Description: Chatbot, "Champ," that answers questions about players on the Dallas Mavericks 2022/2023 team. Refer to the README for
+#   instructions on how run this chatbot. For sample dialog, analysis, and an in-depth description, refer to the Chatbot Report.
+#   The report, code, data/knowledge base, and readme files can be located in the github repos:
+#   Shreya's Repo: https://github.com/shreyavala/nlp_portfolio
+#   Soham's Repo: https://github.com/Zakenmaru/CS4395_Portfolio
 
 
 # import libraries
@@ -29,7 +33,7 @@ intents_dict = {}  # basic intents not about players specifically
 def printKnowledgeBase(fp_name):
     players_pickle = open(fp_name, "rb")
     players_info = pickle.load(players_pickle)
-    # pprint(players_info)
+    #pprint(players_info)
     return players_info
 
 
@@ -47,7 +51,7 @@ def getTopicSynonyms(topics_list):
 
     return syn_dict
 
-
+# checks if user is talking about something unrelated to players
 def checkIntents(user_query):
     intent_not_about_player = False
 
@@ -71,10 +75,14 @@ def checkIntents(user_query):
     elif user_query in intents_dict['mark_cuban']['patterns']:  # check if the user is asking about mark cuban
         print("Champ: " + random.choice(intents_dict['mark_cuban']['responses']))
         intent_not_about_player = True
+    elif user_query in intents_dict['general_mavs']['patterns']:  # check if the user is asking general mavs/nba question
+        print("Champ: " + random.choice(intents_dict['general_mavs']['responses']))
+        intent_not_about_player = True
 
     return intent_not_about_player
 
 
+# grabs general player info, if specific topic not found
 def getGeneralPlayerInfo(player_name):
     name = player_name.replace("_", " ")
     print("\t" + name + " is a player on the 2022-2023 Dallas Mavericks team. "
@@ -239,8 +247,8 @@ def getUserModel(users, user_name):
     if dislikes:
         user_info["dislikes"].extend(dislikes)
 
+# load existing user data from file, or initialize new file if it doesn't exist
 def loadUsers():
-    # load existing user data from file, or initialize new file if it doesn't exist
     try:
         with open("data/users.json", "r") as f:
             users = json.load(f)
@@ -249,6 +257,7 @@ def loadUsers():
     return users
 
 
+# update the user model
 def updateUser(users):
     with open("data/users.json", "w") as f:
         json.dump(users, f)
@@ -266,6 +275,7 @@ def loadIntents(intents_file):
         }
 
 
+# begins chat session and conversation with user
 def chat():
     users = loadUsers()
 
